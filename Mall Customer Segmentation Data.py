@@ -10,9 +10,8 @@ df = pd.read_csv('Mall_Customers.csv')
 df.head()
 
 # Explore the dataset
-df.info()
 df.describe()
-df.isnull().sum()
+
 
 # drop unnecessary columns
 df.drop(['CustomerID'], axis=1, inplace=True)
